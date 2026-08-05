@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 500px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .buttons {
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Registration Form</h1>
+
+    <form>
+        <table>
+            <tr>
+                <td><label>Roll No</label></td>
+                <td><input type="text" name="rollno"></td>
+            </tr>
+
+            <tr>
+                <td><label>Student Name</label></td>
+                <td><input type="text" name="studentname"></td>
+            </tr>
+
+            <tr>
+                <td><label>Father Name</label></td>
+                <td><input type="text" name="fathername"></td>
+            </tr>
+
+            <tr>
+                <td><label>Date of Birth</label></td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+
+            <tr>
+                <td><label>Mobile No</label></td>
+                <td><input type="tel" name="mobile"></td>
+            </tr>
+
+            <tr>
+                <td><label>Email ID</label></td>
+                <td><input type="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name="password"></td>
+            </tr>
+
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" name="gender" value="Other"> Other
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Department</label></td>
+                <td>
+                    <select name="department">
+                        <option>Select Department</option>
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>Mechanical</option>
+                        <option>Civil</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Photo</label></td>
+                <td><input type="file" name="photo"></td>
+            </tr>
+
+            <tr>
+                <td><label>Course</label></td>
+                <td>
+                    <input type="checkbox" name="course" value="B.Tech"> B.Tech
+                    <input type="checkbox" name="course" value="B.Sc"> B.Sc
+                    <input type="checkbox" name="course" value="B.Com"> B.Com
+                    <input type="checkbox" name="course" value="BBA"> BBA
+                    <input type="checkbox" name="course" value="M.Tech"> M.Tech
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>City</label></td>
+                <td><input type="text" name="city"></td>
+            </tr>
+
+            <tr>
+                <td><label>Address</label></td>
+                <td><textarea name="address" rows="4"></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="buttons">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
